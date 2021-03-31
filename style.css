@@ -1,0 +1,143 @@
+
+body{
+    width: 100%;
+
+}
+
+.container{
+    /* border: black 2px solid; */
+    margin-top: 5%;
+    height: 86vh;
+    position: relative;
+    padding: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgb(0, 0,0, 0.8);  
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin:auto;
+    margin-top: 30px ;
+    margin-bottom: 20px;
+    /* padding-left: 17px; */
+    max-width: 800px;
+
+}
+h4{
+    font-size: 1rem;
+    position: absolute;
+    left: 6px;
+    max-lines: 10px;
+    margin: 0 20px 0 20px;
+    width: 60%;
+}
+
+.delete{
+    position: absolute;
+    right: 6px;
+}
+
+
+
+.todo .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: rgb(224, 64, 64) 2px solid; */
+    position: relative;
+    min-height: 50px;
+    /* max-height: 250px; */
+    margin: 10px 15px 10px 10px;
+    /* box-shadow: 5px 5px 10px; */
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    overflow: hidden;
+}
+
+/* .todo .text:hover{
+    box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+} */
+
+
+.moviesList{
+    max-width: 800px;
+    margin:auto;
+    max-height: 460px;
+    overflow: auto;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+}
+
+
+.input-group {
+
+    /* position: -webkit-sticky; /* Safari */
+    /* position: sticky; */ 
+    z-index: 100;
+    height: 58px;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+ 
+}
+
+.input-group  .addMovies{
+    display: flex;
+    width: 350px;
+    margin: auto;
+}
+
+
+
+@media (max-width:780px){
+    .container{
+        height: 97vh;   
+    }
+
+    .input-group {
+        bottom: 10rem;
+    }
+
+    .moviesList{
+        margin-left: 19px;
+        margin-right: 19px;
+        max-height: 460px;
+    }
+    h2{
+        padding-left: 17px;
+    }
+    .todo .text{
+        padding: 40px 0 40px 0;
+    }
+}
+
+@media (max-width:390px){
+    .container{
+        height: 97vh;   
+    }
+
+    .input-group {
+        bottom: 1em;
+    }
+
+    .moviesList{
+        margin-left: 15px;
+        margin-right: 15px;
+        max-height: 360px;
+    }
+    
+}
